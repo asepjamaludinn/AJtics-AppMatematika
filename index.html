@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Mini U</title>
+
+    <!-- Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="css\styles.css" />
+  </head>
+
+  <body>
+    <!-- Navbar Start-->
+    <header>
+      <nav class="navbar">
+        <a href="#" class="navbar-logo">AJ<span>tics</span>.</a>
+        <div class="navbar-nav">
+          <a href="#home">Home</a>
+          <a href="#about">Tentang</a>
+          <a href="#course">Course</a>
+        </div>
+        <div class="navbar-extra">
+          <a href="#" id="search"><i data-feather="search"></i></a>
+          <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+        </div>
+      </nav>
+    </header>
+    <!-- Navbar End-->
+
+    <!-- Home -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Welcome To AJ<span>tics</span>.</h1>
+        <p>
+          Ingin matematika jadi lebih mudah? AJtics siap membantu! Temukan
+          ribuan soal latihan, penjelasan konsep, dan tips belajar yang akan
+          membuat Anda jatuh cinta dengan matematika.
+        </p>
+        <a href="#" class="cta">Kunjungi Sekarang</a>
+      </main>
+      <img src="assets/logo.png" alt="logohome" />
+    </section>
+    <!-- Home -->
+
+    <!-- About -->
+    <section id="about" class="about">
+      <h2>Tentang</h2>
+      <div class="row">
+        <div class="about-img">
+          <img src="assets/about.png" alt="Tentang" />
+        </div>
+        <div class="content">
+          <h3>Mengapa pilih AJ<span>tics</span>?</h3>
+          <p>
+            Ingin nilai matematikamu meningkat drastis? AJtics adalah
+            jawabannya! Kami tidak hanya mengajarkan teori, tetapi juga
+            melatihmu untuk menyelesaikan berbagai soal dengan cepat dan tepat.
+          </p>
+          <p>
+            AJtics singkatan dari Asep Jamaludin<span> Mathematics</span> adalah
+            solusi menyeluruh bagi semua kebutuhan belajar matematikamu. Kami
+            tidak hanya fokus pada satu topik, tetapi memberikan materi
+            pembelajaran yang komprehensif mulai dari dasar hingga tingkat
+            lanjut.
+          </p>
+          <p>
+            Dengan modul belajar yang terstruktur dan sistematis, kamu akan
+            mendapatkan pemahaman yang kuat terhadap seluruh konsep matematika.
+            Selain itu, kami juga menyediakan latihan soal yang beragam, kuis
+            interaktif, dan proyek-proyek menarik untuk mengasah kemampuan
+            pemecahan masalahmu. Bergabunglah dengan AJtics dan rasakan
+            pengalaman belajar matematika yang lengkap dan efektif.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course -->
+    <section class="course" id="course">
+      <select id="shape-select">
+        <option value="segitiga">Segitiga</option>
+        <option value="jajargenjang">Jajar Genjang</option>
+      </select>
+      <h2>Course</h2>
+      <div class="soal-mtk">
+        <!-- Segitiga section -->
+        <div class="segitiga" id="segitiga">
+          <div class="segitiga-img">
+            <img src="assets/segitiga.png" alt="rumus-segitiga" />
+          </div>
+          <div class="formula-luas">
+            <h3>Rumus <span> Luas Segitiga</span></h3>
+            <br />
+            <p>
+              Luas = 1/2 × a × t <br />
+              Ket: <br />
+              a= alas segitiga <br />
+              t= tinggi segitiga
+            </p>
+          </div>
+          <div class="formula-keliling">
+            <h3>Rumus <span> Keliling Segitiga</span></h3>
+            <br />
+            <p>
+              Keliling = S1 + S2 + a <br />Ket: <br />
+              S1 = sisi a <br />
+              S2 = sisi b <br />
+              a = sisi c
+            </p>
+          </div>
+
+          <form class="judul-form-luas">
+            <header>
+              <h1 class="header-luas-segitiga">
+                Hitung <span>Luas Segitiga</span>
+              </h1>
+            </header>
+
+            <div class="input-wrapper">
+              <label for="alas">Panjang Alas</label>
+              <input id="alas" type="number" />
+            </div>
+            <div class="input-wrapper">
+              <label for="tinggi">Tinggi</label>
+              <input id="tinggi" type="number" />
+            </div>
+
+            <p id="result-luas">Hasil Perhitungan:</p>
+            <button class="hasil" id="hitung-luas">Hitung</button>
+          </form>
+
+          <form class="judul-form-keliling">
+            <header>
+              <h1 class="header-keliling-segitiga">
+                Hitung<span> Keliling Segitiga</span>
+              </h1>
+            </header>
+
+            <div class="input-wrapper">
+              <label for="a">Panjang sisi 1</label>
+              <input id="a" type="number" />
+            </div>
+            <div class="input-wrapper">
+              <label for="b">Panjang sisi 2</label>
+              <input id="b" type="number" />
+            </div>
+            <div class="input-wrapper">
+              <label for="c">Panjang sisi 3</label>
+              <input id="c" type="number" />
+            </div>
+
+            <p id="result-keliling">Hasil Perhitungan:</p>
+            <button class="hasil" id="hitung-keliling">Hitung</button>
+          </form>
+        </div>
+
+        <!-- Jajar Genjang section -->
+        <div class="jajargenjang" id="jajargenjang">
+          <div class="jajargenjang-img">
+            <img src="assets/jajargenjang.png" alt="rumus-jajargenjang" />
+          </div>
+          <div class="formula-luas-jg">
+            <h3>Rumus <span> Luas Jajar Genjang</span></h3>
+            <br />
+            <p>
+              Luas = a × t <br />Ket: <br />a= alas jajar genjang <br />t=
+              tinggi jajar genjang
+            </p>
+          </div>
+          <div class="formula-keliling-jg">
+            <h3>Rumus <span> Keliling Jajar Genjang</span></h3>
+            <br />
+            <p>
+              Keliling = 2 × (a + b) <br />
+              Ket: <br />
+              a = sisi a <br />
+              b = sisi b
+            </p>
+          </div>
+          <form class="judul-form-luas">
+            <header>
+              <h1 class="header-luas-jajargenjang">
+                Hitung <span>Luas Jajargenjang</span>
+              </h1>
+            </header>
+
+            <div class="input-wrapper">
+              <label for="alasjg">Panjang Alas</label>
+              <input id="alasjg" type="number" />
+            </div>
+            <div class="input-wrapper">
+              <label for="tinggijg">Tinggi</label>
+              <input id="tinggijg" type="number" />
+            </div>
+
+            <p id="result-luas-jajargenjang">Hasil Perhitungan:</p>
+            <button class="hasil" id="hitung-luas-jajargenjang">Hitung</button>
+          </form>
+
+          <form class="judul-form-keliling">
+            <header>
+              <h1 class="header-keliling-jajargenjang">
+                Hitung<span> Keliling Jajargenjang</span>
+              </h1>
+            </header>
+
+            <div class="input-wrapper">
+              <label for="a-jajargenjang">Panjang sisi 1</label>
+              <input id="a-jajargenjang" type="number" />
+            </div>
+            <div class="input-wrapper">
+              <label for="b-jajargenjang">Panjang sisi 2</label>
+              <input id="b-jajargenjang" type="number" />
+            </div>
+
+            <p id="result-keliling-jajargenjang">Hasil Perhitungan:</p>
+            <button class="hasil" id="hitung-keliling-jajargenjang">
+              Hitung
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Course End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="socials">
+        <a href="https://instagram.com/_jmldnnn"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="https://github.com/asepjamaludinn"
+          ><i data-feather="github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/asep-jamaludin-061565294/"
+          ><i data-feather="linkedin"></i
+        ></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang</a>
+        <a href="#course">Course</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="">Asep Jamaludin</a>. | &copy; 2024.</p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- JS -->
+    <script src="js\scripts.js"></script>
+  </body>
+</html>
